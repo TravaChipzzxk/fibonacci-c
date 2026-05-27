@@ -14,6 +14,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: compile
-      run: ./test_fibonacci.c -o test_fibonacci
+      run: gcc ./test_fibonacci.c -o test_fibonacci
     - name: execute
       run: ./test_fibonacci
